@@ -1,6 +1,23 @@
-Generic single-database configuration.
+### Incorporating alembic to your SQLAlchemy project
 
-$ alembic init
+Youtube tutorial: https://www.youtube.com/watch?v=cWdMPIVEIW0
+
+## Install alembic
+
+$ python3 -m venv env
+
+$ source env/bin/activate
+
+$ pip install alembic
+
+$ alembic init migrations
+
+## Configure almebic
+
+* Edit migrations/env.py
+* Edit migrations/alembic.ini
+
+## Use alembic
 
 $ alembic revision -m "Create initial user table" --autogenerate
 

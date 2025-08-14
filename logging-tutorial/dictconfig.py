@@ -1,7 +1,7 @@
 import logging
 from logging.config import dictConfig
 
-# A dictionary with the logging configuration
+# A logging configuration
 logging_config = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -19,8 +19,7 @@ logging_config = {
     'loggers': {
         'demo': {
             'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': True,
+            'level': 'DEBUG'
         },
     }
 }

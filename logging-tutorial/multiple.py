@@ -13,13 +13,13 @@ logging_config = {
         'console_handler': {
             'class': 'logging.StreamHandler',
             'formatter': 'standard',
-            'level': 'INFO',  # Console only shows INFO and higher
+            'level': 'INFO',  # onsole_handler only shows INFO and higher
         },
         'file_handler': {
             'class': 'logging.FileHandler',
             'filename': 'app.log',
             'formatter': 'standard',
-            'level': 'DEBUG', # File shows everything
+            'level': 'DEBUG', # file_handler shows everything
         },
     },
     'loggers': {
